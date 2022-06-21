@@ -1,0 +1,46 @@
+{
+  "name": "pikalyrics",
+  "version": "0.1.0",
+  "description": "Open Source music video subititle generator & provider",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/main.js",
+    "dev": "watchexec -w src/ -e ts -r 'node -r @swc-node/register src/main.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KRTirtho/pikalyrics.git"
+  },
+  "keywords": [
+    "vosk",
+    "music",
+    "lyrics",
+    "subtitle"
+  ],
+  "author": "Kingkor Roy Tirtho",
+  "license": "BSD-4-Clause",
+  "bugs": {
+    "url": "https://github.com/KRTirtho/pikalyrics/issues"
+  },
+  "homepage": "https://github.com/KRTirtho/pikalyrics#readme",
+  "dependencies": {
+    "async": "^3.2.4",
+    "axios": "^0.27.2",
+    "fastify": "^4.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "mongoose": "^6.3.6",
+    "subtitle": "^4.1.2",
+    "vosk": "^0.3.39",
+    "wav": "^1.0.2",
+    "youtube-dl-exec": "^2.0.12"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.5.1",
+    "@types/async": "^3.2.13",
+    "@types/fluent-ffmpeg": "^2.1.20",
+    "@types/wav": "^1.0.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.3"
+  }
+}
